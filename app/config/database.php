@@ -54,8 +54,8 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => 'localhost',
-			'database'  => 'database',
+			'host'      => '127.0.0.1', //'localhost', //a bit of performance boost
+			'database'  => 'note_it',
 			'username'  => 'root',
 			'password'  => '',
 			'charset'   => 'utf8',

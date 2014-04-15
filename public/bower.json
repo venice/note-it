@@ -1,0 +1,23 @@
+{
+  "name": "note-it",
+  "version": "4.1.18",
+  "homepage": "https://github.com/venice/note-it",
+  "authors": [
+    "venice chan <venicechong@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.1.1",
+    "less": "~1.7.0",
+    "underscore": "~1.6.0",
+    "backbone": "~1.1.2"
+  }
+}

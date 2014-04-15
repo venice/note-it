@@ -1,0 +1,43 @@
+{
+  "name": "note-it",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "venice",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.6.0",
+    "gulp-autoprefixer": "0.0.7",
+    "gulp-less": "^1.2.3",
+    "gulp-uglify": "^0.2.1",
+    "gulp-rename": "^1.2.0",
+    "browserify": "^3.41.0",
+    "vinyl-source-stream": "^0.1.1",
+    "browserify-shim": "^3.4.1",
+    "gulp-notify": "^1.2.5"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "browser": {
+    "jquery": "./js/lib/jquery/dist/jquery.min.js",
+    "underscore": "./js/lib/underscore/underscore.js",
+    "backbone": "./js/lib/backbone/backbone.js"
+  },
+  "browserify-shim": {
+    "jquery": "$",
+    "underscore": "global:_",
+    "backbone": {
+      "exports": "Backbone",
+      "depends": [
+        "jquery:$",
+        "underscore:_"
+      ]
+    }
+  }
+}
